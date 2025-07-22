@@ -1,26 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    cursor: none;
-    font-family: 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: #0a0a0a;
+    font-family: 'Courier Prime', monospace;
     color: #e0e0e0;
+    background: #0a0a0a;
     overflow-x: hidden;
-}
-
-#video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -999;
-    transition: opacity 0.5s ease;
-    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 canvas {
@@ -30,33 +23,87 @@ canvas {
     z-index: -2;
 }
 
-.cursor-dot {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(3px);
-    background: rgba(255, 255, 255, 0.363);
-    box-shadow:
-    inset 0 0 10px rgba(255, 255, 255, 0.1),
-    0 0 30px rgb(255, 255, 255);
-    animation: float 20s ease-in-out infinite;
-    z-index: 5;
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
 }
 
-header {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.794);
+h2{
+    text-align: left;
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.8rem;
+    color: #e0e0e0;
+}
+
+h3{
+    text-align: left;
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.8rem;
+    color: #e0e0e0a0;
+}
+
+p{
+    text-align: left;
+    color: #e0e0e0c9;
+}
+
+video {
     position: relative;
+    width: 400px;
+    height: 300px;
     z-index: 1;
+    object-fit: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.image-holder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding-top:-20;
+    padding:40px;
+}
+
+.image-holder img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+#video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -999;
+}
+
+.heading-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.heading-row h2,
+.heading-row h3 {
+    margin: 0;
+}
+
+.spacer {
+    padding-top: 30px;
+}
+
+.container {
+    
+    width: 650px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
@@ -64,54 +111,25 @@ header {
     flex-direction: column;
     align-items: center;
     width: auto;
-    height: auto;
-}
-
-.title-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 5;
-}
-
-.scrolled .title-container {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-    pointer-events: auto;
+    height: 15vh;
 }
 
 .name-title {
     font-family: 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 3.5rem;
     color: #ffffff;
-    text-shadow: 0 0 10px #7e7e7e66;
-}
-
-header p {
-    font-size: 1.2rem;
-    color: #ccc;
-    margin-top: 20px;
 }
 
 .badge {
+    font-family: 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: relative;
     background: rgb(255, 0, 0);
     color: #ffffff;
-    padding: 6px;
-    width: 200px;
-    font-size: 0.8rem;
-    margin-top: -20px;
+    padding: 2px;
+    font-size: 0.7rem;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-footer {
-    text-align: center;
-    padding: 50px;
-    font-size: 0.9rem;
-    color: #777;
+    margin-top: -30px;
 }

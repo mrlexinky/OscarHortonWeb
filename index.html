@@ -8,53 +8,81 @@
 </head>
 <body>
     <canvas id="container"></canvas>
-    <div class="cursor-dot" id="cursor"></div>
-
-    <video autoplay muted loop id="video">
-        <source src="ShowReel.mp4" type="video/mp4">
-    </video>
-
-    <header>
-        <div class="title-container">
+    <canvas id="pixelReveal"></canvas>
+    <div class="container">
+        <header>
             <div class="title">
                 <h1 class="name-title">Oscar Horton</h1>
-                <div class="badge">Student - Skater - Developer</div>
+                <div class="badge">Student Developer</div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <section class="reveal">
-        <h2>[ par mani ]</h2>
-        <p>mani sauc ADRI4N. Flask ir mana platforma. Neironi ir mani skeiteri. Es eksperimentēju ar ML kā ar lēcienu pa kāpnēm — tu nekad neesi drošs, vai nosēdīsi.</p>
-    </section>
+        <div class="spacer"></div>
 
-    <section class="reveal">
-        <h2>[ tune selection ]</h2>
-        <p>šī ir viena no pēdējām miksēm, ko klausījos kodējot TSP heist vizualizatoru uz kafijas un Liquid DnB…</p>
-    </section>
+        <section class="reveal">
+            <h2>about</h2>
+            <p>
+                student developer based in cambridge uk with passion for maths and computer science. 
+                studying at hills road sixth form college with predicted results of 4A*. active local 
+                skateboarder and ejoyer of music, clothes and culture. always exploring new tech and ways 
+                to level up coding skills — currently diving deeper into python frameworks and front-end design. 
+                weekends spent skating around town, hunting down vintage tees and catching live shows whenever 
+                possible.
+            </p>
+            <video autoplay muted loop src="ShowReel.mp4"></video>
+        </section>
 
-    <section class="reveal skate-section">
-        <h2>[ sk8 or code ]</h2>
-        <p>Neural net tricks ain't got names... but these do:</p>
-        <button class="trick-generator" onclick="generateTrick()">ģenerēt triku</button>
-        <div class="trick-output" id="trickOutput">kickflip???</div>
+        <section class="reveal">
+            <h2>experience</h2>
+            <p>python - flask - c# - css - html - js</p>
+            <p>
+                hands-on work experience at microsoft research cambridge working in their mesh team with python and blender.
+                personal experience with python and numpy for maths and data processing. familiar with building 
+                frontent websites with html, css and js to connect to via flask to visual mathematic programs running in python
+            </p>
+        </section>
 
-        <video autoplay loop muted>
-            <source src="https://files.catbox.moe/houqm2.mp4" type="video/mp4">
-            Tavs pārlūks neatbalsta video.
-        </video>
-    </section>
+        <section class="reveal">
+            <h1>projects</h1>
+            <div class="heading-row">
+                <h2>neural network python</h2>
+                <h3>2024-2025</h3>
+            </div>
+            <p>
+                i developed a neural network from scratch using only python and numpy. i focussed on both the underlying 
+                mathematical concepts and practical implementation with well documented and well written code. This project 
+                required researching machine learning theory, 
+                writing efficient code using numpy, and applying problem-solving skills to optimise performance. 
+                it gave me hands-on experience with model design, training algorithms, and debugging complex 
+                behaviours—showcasing both my technical ability and self-motivation. The project reflects my love for understanding
+                complex mathematic systems and applied problem solving.
+            </p>
+            <div class="image-holder">
+                <img src="/neuralnetwork/neuralnetwork2.png">
+                <img src="/neuralnetwork/neuralnetwork1.png">
+                <img src="/neuralnetwork/neuralnetwork3.png">
+                <img src="/neuralnetwork/neuralnetwork4.png">
+            </div>
+        </section>
 
-    <section class="reveal">
-        <h2>[ sazinies ]</h2>
-        <p><a href="mailto:adr4n@nettspend.zone">adr4n@nettspend.zone</a> // dm @sk8nettwire on IG</p>
-    </section>
-
-    <footer>
-        Oscar Horton 2025
-    </footer>
-
+        <section class="reveal">
+            <h2>contact</h2>
+            <a href="https://instagram.com/oscar.horton" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram Logo" />
+              </a>
+              <a href="https://github.com/mrlexinky" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="https://cdn-icons-png.flaticon.com/24/733/733553.png" alt="GitHub Logo" />
+              </a>
+        </section>
+        
+        <div class="spacer"></div>
+        <footer>
+            oscarahorton@outlook.com
+        </footer>
+        <footer>
+            Oscar Horton 2025
+        </footer>
+    </div>
     <script src="main.js"></script>
-
 </body>
 </html>
