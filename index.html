@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>OscarHorton.net</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <canvas id="container"></canvas>
+    <div class="cursor-dot" id="cursor"></div>
+
+    <video autoplay muted loop id="video">
+        <source src="ShowReel.mp4" type="video/mp4">
+    </video>
+
+    <header>
+        <div class="title-container">
+            <div class="title">
+                <h1 class="name-title">Oscar Horton</h1>
+                <div class="badge">Student - Skater - Developer</div>
+            </div>
+        </div>
+    </header>
+
+    <section class="reveal">
+        <h2>[ par mani ]</h2>
+        <p>mani sauc ADRI4N. Flask ir mana platforma. Neironi ir mani skeiteri. Es eksperimentēju ar ML kā ar lēcienu pa kāpnēm — tu nekad neesi drošs, vai nosēdīsi.</p>
+    </section>
+
+    <section class="reveal">
+        <h2>[ tune selection ]</h2>
+        <p>šī ir viena no pēdējām miksēm, ko klausījos kodējot TSP heist vizualizatoru uz kafijas un Liquid DnB…</p>
+    </section>
+
+    <section class="reveal skate-section">
+        <h2>[ sk8 or code ]</h2>
+        <p>Neural net tricks ain't got names... but these do:</p>
+        <button class="trick-generator" onclick="generateTrick()">ģenerēt triku</button>
+        <div class="trick-output" id="trickOutput">kickflip???</div>
+
+        <video autoplay loop muted>
+            <source src="https://files.catbox.moe/houqm2.mp4" type="video/mp4">
+            Tavs pārlūks neatbalsta video.
+        </video>
+    </section>
+
+    <section class="reveal">
+        <h2>[ sazinies ]</h2>
+        <p><a href="mailto:adr4n@nettspend.zone">adr4n@nettspend.zone</a> // dm @sk8nettwire on IG</p>
+    </section>
+
+    <footer>
+        Oscar Horton 2025
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
