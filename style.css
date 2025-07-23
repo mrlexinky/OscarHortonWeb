@@ -60,17 +60,15 @@ video {
 
 .image-holder {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
     padding-top:-20;
-    padding:40px;
 }
 
 .image-holder img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 4px;
     display: block;
 }
 
@@ -95,7 +93,7 @@ video {
 }
 
 .spacer {
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .container {
